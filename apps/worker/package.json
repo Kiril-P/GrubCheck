@@ -1,0 +1,26 @@
+{
+  "name": "@grubcheck/worker",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/jobs/index.ts",
+    "./jobs": "./src/jobs/index.ts"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts run:status",
+    "build": "bun build src/index.ts --target bun --outfile dist/index.js",
+    "start": "bun dist/index.js",
+    "run:status": "bun src/index.ts status",
+    "sync:steam-market": "bun src/index.ts sync:steam-market",
+    "sync:assets": "bun src/index.ts sync:assets",
+    "sync:prices": "bun src/index.ts sync:prices",
+    "sync:all": "bun src/index.ts sync:all"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.798.0",
+    "@grubcheck/db": "workspace:*",
+    "@grubcheck/domain": "workspace:*",
+    "@grubcheck/render": "workspace:*",
+    "zod": "^3.24.4"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@grubcheck/render",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@grubcheck/domain": "workspace:*"
+  }
+}
