@@ -1,5 +1,9 @@
 # GrubCheck
 
+![GrubCheck workbench using the demo catalog and procedural mannequin](docs/media/grubcheck-workbench.png)
+
+*Development preview: demo catalog, demo prices, and procedural mannequin; imported Rust assets are not shown.*
+
 GrubCheck is a high-fidelity Rust skin compositor focused on one thing first: helping players see whether a kit actually looks good, matches a biome, and is worth the money.
 
 This repo now includes the first end-to-end MVP scaffold:
