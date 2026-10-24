@@ -11,3 +11,4 @@ coverage
 drizzle
 *.log
 *.tsbuildinfo
+*.TMP
